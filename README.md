@@ -16,6 +16,7 @@ Sockets Links.
 ## PROGRAM
 
 ### server:
+```
 
 import socket
 
@@ -38,9 +39,9 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as server_socket:
                 conn.sendall(data)
                 print(f"Echoed: {data.decode('utf-8')}")
 
-
+```
 ### client:
-
+```
 
 import socket
 
@@ -55,7 +56,7 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as client_socket:
 
     data = client_socket.recv(1024)
     print(f"Received echo: {data.decode('utf-8')}")
-
+```
     
 ## OUPUT
 
